@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.svcet.krytonites.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="30dp">
+
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:text="Registration"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRegistration"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etName"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etUsername"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPassword"
+            android:hint="Age"
+            android:inputType="number"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/bRegister"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAge"
+            android:text="Register"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
